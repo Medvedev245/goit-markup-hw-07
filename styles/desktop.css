@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
   .container {
     /* max-width: 1158px; */
-    min-width: 1328px;
+    max-width: 1158px;
   }
 
   .team {
@@ -68,10 +68,13 @@
 
   .description-item {
     width: 264px;
-    margin-right: 24px;
   }
 
-  .description-item:nth-last-child(-n + 1) {
-    margin-right: 0;
+  .description-item:nth-child(2n - 1) {
+    margin-right: 0px;
+  }
+
+  .description-list {
+    display: flex;
   }
 }

@@ -293,7 +293,7 @@ img {
 }
 
 .team-item {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 264px;
   background-color: var(--withe-text);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),

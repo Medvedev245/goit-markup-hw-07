@@ -11,8 +11,12 @@
     text-align: center;
   }
 
-  .description-item {
+  .team-item {
+    margin: 0 auto;
+  }
+
+  /* .description-item {
     width: 396px;
     margin-bottom: 72px;
-  }
+  } */
 }

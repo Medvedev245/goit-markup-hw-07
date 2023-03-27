@@ -40,6 +40,10 @@
     margin-bottom: 0;
   }
 
+  .description-item {
+    margin-bottom: 0;
+  }
+
   /* .description-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   } */
