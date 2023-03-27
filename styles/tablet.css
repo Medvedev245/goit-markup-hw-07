@@ -26,4 +26,21 @@
   .team-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
+  /* ----description  section--- */
+  .description-item {
+    display: inline-block;
+    width: 355px;
+  }
+
+  .description-item:nth-child(2n - 1) {
+    margin-right: 24px;
+  }
+
+  .description-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  /* .description-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  } */
 }

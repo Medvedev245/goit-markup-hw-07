@@ -202,10 +202,10 @@ img {
 
 .description {
   background-color: var(--withe-text);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
-.description-block {
+/* .description-block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,12 +214,16 @@ img {
   margin-bottom: 8px;
   border-radius: 4px;
   background-color: var(--team-bg-color);
+} */
+
+.description-block {
+  display: none;
 }
 
 .description-list {
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
   gap: var(--standart-gap);
 }
 
@@ -232,6 +236,7 @@ img {
   letter-spacing: 0.02em;
   margin: 0;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .description-text,
@@ -244,7 +249,8 @@ img {
 }
 
 .description-item {
-  width: 264px;
+  max-width: 396px;
+  margin-bottom: 72px;
 }
 
 .work-subtitle,
@@ -962,12 +968,6 @@ textarea {
   letter-spacing: 0.04em;
   color: var(--withe-text);
 }
-
-/* @media screen and (max-width: 1200) {
-  .description-block {
-    display: none;
-  }
-} */
 
 /* 
 --adress-text-color: #404BBF;

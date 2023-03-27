@@ -1,6 +1,7 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
+    /* max-width: 1158px; */
+    min-width: 1328px;
   }
 
   .team {
@@ -39,4 +40,38 @@
   }
 
   /* ---/WORKS section--- */
+
+  /* ---description section---  */
+  .description {
+    padding: 120px 0;
+  }
+
+  /* ---description section---  */
+  .description-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--team-bg-color);
+  }
+
+  .decoration-subtitle {
+    text-align: left;
+  }
+
+  /* .description-item {
+    display: flex;
+  } */
+
+  .description-item {
+    width: 264px;
+    margin-right: 24px;
+  }
+
+  .description-item:nth-last-child(-n + 1) {
+    margin-right: 0;
+  }
 }

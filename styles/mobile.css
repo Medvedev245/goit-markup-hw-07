@@ -3,7 +3,16 @@
     max-width: 426px;
   }
 
-  /* .description-block {
+  .description-block {
     display: none;
-  } */
+  }
+
+  .decoration-subtitle {
+    text-align: center;
+  }
+
+  .description-item {
+    width: 396px;
+    margin-bottom: 72px;
+  }
 }
