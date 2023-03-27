@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .team-item {
+    display: inline-block;
+  }
+
+  .team-item:nth-child(2n + 1) {
+    margin-right: 26px;
+  }
+
+  .team-list {
+    text-align: center;
+  }
+  /* 
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+  } */
+
+  .team-item {
+    margin-bottom: 64px;
+  }
+
+  .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}

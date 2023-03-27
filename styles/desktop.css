@@ -1,0 +1,42 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .team {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .team-list {
+    display: flex;
+    width: 100%;
+  }
+
+  .team-item {
+    margin-bottom: 0;
+  }
+
+  .team-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  /* ---WORKS section--- */
+
+  .work {
+    display: block;
+    background-color: var(--withe-text);
+    padding-bottom: 120px;
+  }
+
+  .work-list {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    gap: var(--standart-gap);
+  }
+
+  /* ---/WORKS section--- */
+}
