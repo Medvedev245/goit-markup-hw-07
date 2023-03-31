@@ -56,10 +56,17 @@ img {
   text-decoration: none;
 }
 
+/* .header-nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 322px;
+  display: none;
+} */
+
 /* ---NAVIGATION--- */
 
 .header-logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 1.3;
@@ -70,10 +77,9 @@ img {
 }
 
 .header-list {
-  display: flex;
-  gap: 40px;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .header-span {
@@ -81,7 +87,6 @@ img {
 }
 
 .header-link {
-  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.5;
   font-size: 16px;
@@ -90,6 +95,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 24px;
   padding-bottom: 24px;
+  text-transform: capitalize;
+  color: var(--title-text-color);
 }
 
 .header-link:hover,
@@ -113,7 +120,6 @@ img {
 }
 
 .header-navigation {
-  display: flex;
   color: var(--primary-text-color);
   font-weight: 400;
   line-height: 1.5;
@@ -141,9 +147,47 @@ img {
 .header-address {
   margin-left: auto;
 }
+/*modal burger*/
+.header-nav-wrap {
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: var(--withe-text);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.header-item:last-child {
+  /*modal burger*/
+  margin-bottom: 0;
+}
+
+.header-btn-mobile-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: var(--footer-text-color);
+  opacity: 0.1;
+  /* NAVY BLUE */
+
+  border: 1px solid var(--title-text-color);
+}
 
 /* ---HEADER--- */
 /* ---HERO  section--- */
+
+.hero > .container {
+  padding: 0;
+}
 
 .hero {
   background-color: var(--title-text-color);
@@ -152,12 +196,24 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background/bg-heroes.jpg);
+    url(../images/background/hero-bg-mobie.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/hero-bg-mobile-x2.jpg);
+  }
 }
 
 .text-center {
@@ -166,14 +222,14 @@ img {
 
 .hero-title {
   text-align: center;
-  width: 496px;
+  max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
   color: var(--withe-text);
   font-weight: 700;
-  line-height: 1;
-  font-size: 56px;
+  line-height: 1.1;
+  font-size: 36px;
   letter-spacing: 0.02em;
 }
 
@@ -293,7 +349,7 @@ img {
 }
 
 .team-item {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   max-width: 264px;
   background-color: var(--withe-text);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -389,7 +445,7 @@ img {
 /* ---customers section--- */
 
 .customers {
-  padding: 125px 0;
+  padding: 96px 0;
 }
 
 .customers-title {
@@ -409,9 +465,10 @@ img {
 .customers-list {
   margin: 0;
   padding: 0;
-  display: flex;
+  text-align: center;
+  /* display: flex;
   justify-content: center;
-  gap: var(--standart-gap);
+  gap: var(--standart-gap); */
 }
 
 .customers-link {
@@ -436,6 +493,16 @@ img {
 
 .customers-svg {
   fill: currentColor;
+}
+
+.customers-item {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 72px;
+}
+
+.customers-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 /* ---/customers section--- */
@@ -967,6 +1034,22 @@ textarea {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--withe-text);
+}
+
+/* ----------modal - burger---------- */
+
+.mobile-menu-open {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ----------modal - burger---------- */
+
+@media screen and (max-width: 767px) {
+  .header-navigation {
+    display: none;
+  }
 }
 
 /* 

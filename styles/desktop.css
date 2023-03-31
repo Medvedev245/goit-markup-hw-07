@@ -4,6 +4,43 @@
     max-width: 1158px;
   }
 
+  .header-nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 322px;
+  }
+
+  .header-address-list {
+    flex-direction: row;
+  }
+
+  .header-address-item:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  /* ---HERO  section--- */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/bg-heroes.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background/hero-bg-desktop-x2.jpg);
+    }
+  }
+
   .team {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -77,4 +114,20 @@
   .description-list {
     display: flex;
   }
+
+  /* ---customers section--- */
+
+  .customers {
+    padding: 125px 0;
+  }
+
+  .customers-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: var(--standart-gap);
+  }
+
+  /* ---/customers section--- */
 }

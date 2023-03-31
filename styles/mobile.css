@@ -15,8 +15,11 @@
     margin: 0 auto;
   }
 
-  /* .description-item {
-    width: 396px;
-    margin-bottom: 72px;
-  } */
+  /* ---customers section--- */
+
+  .customers-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* ---/customers section--- */
 }
