@@ -327,10 +327,18 @@ img {
 }
 
 .team-social-list {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.header-nav-wrap > ul {
   margin: 0;
   padding: 0;
   display: flex;
   gap: 56px;
+  justify-content: space-between;
 }
 
 .team-social-item {
@@ -457,25 +465,29 @@ img {
   margin-bottom: 72px;
 }
 
-.customers-item:nth-last-child(-n + 2) {
+.customers-item:last-child {
   margin-bottom: 0px;
 }
-
+.customers-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
 /* ---/customers section--- */
 
 /* ---footer section--- */
 
 .footer {
   background-color: var(--title-text-color);
-  padding: 100px 0;
+  padding: 96px 15px;
 }
 
 .footer .container {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-descr {
+  text-align: center;
   margin-right: 120px;
 }
 
@@ -498,6 +510,7 @@ img {
 .footer-text {
   width: 264px;
   margin: 0;
+  text-align: left;
 
   font-weight: 400;
   line-height: 1.5;
@@ -548,10 +561,6 @@ img {
 .subscribe {
   margin-left: auto;
 }
-
-/* .subscribe-form {
-  display: flex;
-} */
 
 /* ---/footer section--- */
 
@@ -914,7 +923,7 @@ textarea {
 }
 
 .footer-subscribe-form {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .wrapper-check {
@@ -1004,9 +1013,6 @@ textarea {
 /* ----------modal - burger---------- */
 
 @media screen and (max-width: 767px) {
-  .header-navigation {
-  }
-
   .header-list {
     display: flex;
     flex-direction: column;
@@ -1031,6 +1037,15 @@ textarea {
     position: fixed;
     right: 0;
     top: 0;
+
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .header-nav-wrap.is-open {
+    transform: translateX(0);
   }
 
   .header-address-list {
@@ -1102,6 +1117,39 @@ textarea {
   .team-svg {
     width: 24px;
     height: 24px;
+  }
+
+  .footer-descr {
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .footer-social-text {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin: 0 auto;
+  }
+
+  .footer-link {
+    background-color: var(--accent-color);
+  }
+
+  .footer-social-list {
+    margin-bottom: 72px;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer-form {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .customers-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
