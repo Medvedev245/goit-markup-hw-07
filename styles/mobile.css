@@ -12,7 +12,14 @@
   }
 
   .team-item {
-    margin: 0 auto;
+    margin: 0;
+  }
+  .modal-label {
+    font-size: 12px;
+  }
+
+  .modal-title {
+    font-size: 16px;
   }
 
   /* ---customers section--- */

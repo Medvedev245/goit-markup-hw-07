@@ -1,13 +1,16 @@
 @media screen and (min-width: 1200px) {
   .container {
-    /* max-width: 1158px; */
     max-width: 1158px;
+  }
+
+  .header > .container {
+    justify-content: space-between;
   }
 
   .header-nav-wrap {
     display: flex;
     align-items: center;
-    gap: 322px;
+    /* gap: 322px; */
   }
 
   .header-address-list {
@@ -17,6 +20,12 @@
   .header-address-item:not(:last-child) {
     margin-right: 40px;
     margin-bottom: 0;
+  }
+
+  .header-mail,
+  .header-tel {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   /* ---HERO  section--- */
@@ -47,16 +56,10 @@
   }
 
   .team-list {
-    display: flex;
-    width: 100%;
+    flex-wrap: nowrap;
   }
 
   .team-item {
-    margin-bottom: 0;
-  }
-
-  .team-item:not(:last-child) {
-    margin-right: 24px;
     margin-bottom: 0;
   }
 
@@ -107,6 +110,25 @@
     width: 264px;
   }
 
+  .decoration-subtitle,
+  .portfolio-title {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .description-text,
+  .portfolio-title {
+    font-weight: 400;
+  }
+
+  .portfolio-title {
+    text-align: left;
+  }
+
   .description-item:nth-child(2n - 1) {
     margin-right: 0px;
   }
@@ -125,6 +147,11 @@
 
   .customers {
     padding: 125px 0;
+  }
+
+  .customers > .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .customers-list {
@@ -148,7 +175,6 @@
     display: flex;
     align-items: baseline;
     width: 100%;
-    flex-direction: row;
   }
 
   /* .footer-text {
@@ -164,7 +190,7 @@
     text-align: left;
   }
 
-  ..footer-subscribe-form {
-    margin-left: 0;
+  .footer-subscribe-form {
+    margin-left: auto;
   }
 }
