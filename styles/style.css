@@ -555,7 +555,6 @@ img {
 
 .portfolio-filter {
   margin: 0;
-
   margin-bottom: 72px;
   padding-left: 0;
   display: flex;
@@ -566,16 +565,14 @@ img {
 .portfolio-list {
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 /* Portfolio.html --------heroes section-------*/
 
 .heroes-list {
-  margin: 0 24px 48px 0;
-
   background-color: var(--withe-text);
 }
 
